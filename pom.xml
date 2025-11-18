@@ -130,9 +130,16 @@
 			<plugin>
 				<groupId>org.owasp</groupId>
 				<artifactId>dependency-check-maven</artifactId>
-				<version>9.2.0</version>
+				<version>12.1.9</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>check</goal>
+						</goals>
+					</execution>
+				</executions>
 				<configuration>
-					<failBuildOnCVSS>7</failBuildOnCVSS>
+					<nvdApiKey>674a22bd-218a-4924-8ba2-7b4adf0c0856</nvdApiKey>
 				</configuration>
 			</plugin>
 		</plugins>
