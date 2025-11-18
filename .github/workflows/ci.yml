@@ -38,6 +38,12 @@ jobs:
       - name: Run OWASP Dependency-Check (SCA)
         run: mvn org.owasp:dependency-check-maven:check
 
+      - name: Upload SpotBugs Report (SAST)
+        uses: actions/upload-artifact@v4
+        with:
+          name: spotbugs-report
+          path: target/spotbugs-report.html
+
       - name: Upload Dependency-Check report
         uses: actions/upload-artifact@v4
         with:

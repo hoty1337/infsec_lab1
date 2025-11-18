@@ -118,6 +118,10 @@
 				<configuration>
 					<effort>Max</effort>
 					<threshold>Low</threshold>
+					<xmlOutput>true</xmlOutput>
+					<htmlOutput>true</htmlOutput>
+					<outputDirectory>${project.build.directory}/spotbugs</outputDirectory>
+					<failOnError>true</failOnError>
 				</configuration>
 				<executions>
 					<execution>
